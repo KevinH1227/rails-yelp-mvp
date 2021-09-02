@@ -12,6 +12,6 @@ puts 'Restaurant database'
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     phone_number: Faker::PhoneNumber.phone_number,
-    category: ['chinese', 'italian', 'japanese', 'french', 'belgian'].sample
+    category: %w[chinese italian japanese french belgian].sample
   )
 end
